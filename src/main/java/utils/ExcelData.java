@@ -21,7 +21,8 @@ public class ExcelData {
 	public String[] getExcelData(String sheetname) {
 		String[] data = new String[12];
 		try {
-			File file = new File("C:\\Users\\2081002\\Documents\\FormTestData.xlsx");
+		File file = new File(System.getProperty("user.dir")+"\\src\\main\\java\\utils\\FormTestData.xlsx");
+
 			//System.out.println(file.getAbsolutePath());
 			//System.out.println(sheetname);
 			
